@@ -1,0 +1,43 @@
+$soft-red: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$dark-desaturated-cyan: hsl(167, 40%, 24%);
+$dark-blue: hsl(198, 62%, 26%);
+$dark-moderate-cyan: hsl(168, 34%, 41%);
+
+$very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$very-dark-grayish-blue: hsl(213, 9%, 39%);
+$dark-grayish-blue: hsl(232, 10%, 55%);
+$grayish-blue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+$white90: hsl(26, 100%, 99%);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.btn,
+.section-link {
+  font-family: $secondary-font;
+  font-weight: 900;
+}
+
+.container {
+  background-color: $white90;
+  max-width: 1140px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+$scroll-padding: 10rem;
+
+$transition: 0.25s ease;
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1640px;
+  }
+}

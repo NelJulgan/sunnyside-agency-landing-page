@@ -1,0 +1,56 @@
+.services {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .service-container {
+    position: relative;
+
+    .img-box {
+      height: 60rem;
+      overflow: hidden;
+
+      .service-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .service-content {
+      position: absolute;
+      bottom: 4rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      text-align: center;
+      padding: 2rem;
+
+      .service-title {
+        font-size: 2.8rem;
+        margin-bottom: 3rem;
+        text-transform: uppercase;
+      }
+
+      .service-text {
+        font-size: 1.6rem;
+        line-height: 1.7;
+      }
+
+      .service-title.cyan,
+      .service-text.cyan {
+        color: $dark-desaturated-cyan;
+      }
+
+      .service-title.blue,
+      .service-text.blue {
+        color: $dark-blue;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+}
