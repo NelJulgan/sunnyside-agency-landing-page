@@ -14,5 +14,14 @@
 @media (min-width: 768px) {
   .project {
     grid-template-columns: repeat(4, 1fr);
+
+    .proj-image-container {
+      height: 440px;
+      .proj-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
 }
